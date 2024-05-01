@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+section:hover {
+    transform: rotateY(20deg);
+    transition: transform 1.5s ease;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;  
+}
+
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scale(1);
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.fa-square-instagram{
+    font-size: 50px;
+}
+.fa-square-whatsapp{
+    font-size: 50px;
+}
+.fa-square-github{
+    font-size: 50px;
+}
+.t{
+    text-decoration: none;
+    font-size: 150%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me using any of the following methods:<br>
+
+            Email: eastonbernon@gmail.com<br>
+            Github: <a href="https://github.com/easton11121">easton11121</a><br>
+            Instagram: <a href="https://www.instagram.com/easton_nly/">easton_nly</a><br>
+            whatsapp: <a href="https://web.whatsapp.com/0789807458/">0789807458</a><br>
+            Phone: +250789807458 <br>
+            Location: <a href="https://www.google.com/maps/place/Sonatubes/@-1.9687076,30.0997288,810m/data=!3m2!1e3!4b1!4m6!3m5!1s0x19dca64f761b814b:0xac5a13c74d16a75c!8m2!3d-1.968713!4d30.1023037!16s%2Fg%2F12llnyb76?entry=ttu">KICUKIRO SONATUBE</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Bernon</p>
+    </footer>
+</body>
+</html>
